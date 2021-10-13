@@ -15,9 +15,9 @@ ul {
 }
 
 .memory-game {
-  width: 846px;
-  height: 1050px;
-  margin: auto;
+  width: 648px;
+  height: 852px;
+  margin: 82px auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
@@ -29,8 +29,8 @@ ul {
 .memoryCard {
   /* width: calc(25% - 10px);
     height: calc(33.333% - 10px); */
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
   margin: 5px;
   position: relative;
   transform: scale(1);
@@ -67,14 +67,14 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  width: 846px;
-  height: 80px;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 24px;
+  width: 645px;
+  height: 67px;
+  padding: 6px;
+  margin-top: 7px;
+  font-size: 22px;
   /* background: rgb(136, 199, 250);
       border: #1C7CCC 2px solid; */
-  border-radius: 5px;
+  border-radius: 3px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +88,7 @@ ul {
 .timer {
   background: rgb(221, 81, 0);
   padding: 10px;
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -97,7 +97,7 @@ ul {
 .score {
   background: rgb(221, 81, 0);
   padding: 10px;
-  width: 120px;
+  width: 117px;
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -105,8 +105,8 @@ ul {
 
 .button {
   border-radius: 5px;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 22px;
+  padding: 8px;
   box-shadow: 1px 1px 2px black;
   background: transparent;
   background: rgb(221, 81, 0);
