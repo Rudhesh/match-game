@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Memory Game!</title>
+  </head>
+
+
+    
+    <body>
+      
+      <div class="controller">
+       
+        <div class="timer">00:00</div>
+        <button class="button">Start</button>
+        <div class="score">Score : 0</div>
+      </div>
+      
+      <section class="memory-game">
+        
+        <div class="memoryCard" data-vehicles="aurelia">
+          <img class="front-face" src="./src/img/frog.jpg" alt="Aurelia" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="aurelia">
+          <img class="front-face" src="./src/img/frog.jpg" alt="Aurelia" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="vue">
+          <img class="front-face" src="./src/img/kangru.jpg" alt="Vue" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="vue">
+          <img class="front-face" src="./src/img/kangru.jpg" alt="Vue" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="angular">
+          <img class="front-face" src="./src/img/monkey.jpg" alt="Angular" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="angular">
+          <img class="front-face" src="./src/img/monkey.jpg" alt="Angular" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="ember">
+          <img class="front-face" src="./src/img/rabbit.jpg" alt="Ember" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="ember">
+          <img class="front-face" src="./src/img/rabbit.jpg" alt="Ember" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="backbone">
+          <img class="front-face" src="./src/img/fox.jpg" alt="Backbone" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="backbone">
+          <img class="front-face" src="./src/img/fox.jpg" alt="Backbone" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="react">
+          <img class="front-face" src="./src/img/dog.jpg" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="react">
+          <img class="front-face" src="./src/img/dog.jpg" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="java">
+          <img class="front-face" src="./src/img/mammad.png" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="java">
+          <img class="front-face" src="./src/img/mammad.png" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="php">
+          <img class="front-face" src="./src/img/elephant.jpg" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="php">
+          <img class="front-face" src="./src/img/elephant.jpg" alt="React" />
+          <img class="back-face" src="./src/img/6iypjj4in.gif" alt="JS Badge" />
+        </div>
+       
+      </section>
+      <!-- <div class="controller">
+       
+        <div class="score">Score : 0</div>
+      </div> -->
+
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+           
+            <!-- <a class="close" href=# >×</a> -->
+            <div class="content-1">
+                Congratulations you're a winner 🎉🎉
+            </div>
+            <div class="content-2">
+                <p>You made <span id=finalMove> </span> moves </p>
+                <p>in <span id=totalTime> </span> </p>
+                <p>Score:  <span id=starRating></span></p>
+            </div>
+            <button id="play-again"onclick="playAgain()">
+                Play again 😄</a>
+            </button>
+        </div>
+    </div>
+    
+      <script src="/src/index.js"></script>
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
